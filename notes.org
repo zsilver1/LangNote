@@ -21,3 +21,10 @@
 * Links
 - Links to features or words will be hoverable to show short definition
 - Clicking on links will open word/feature screen
+* Inflections
+- Inflections map X number of features to a specific set of regular expression replacements
+  e.g. future positive -> rule 1: replace x$ with sa
+                          rule 2: replace d$ with ksa
+- These generated inflections can be freely overridden in word screen
+- Optionally, inflections can appear directly on the word screen, or they can be
+  viewed in the inflection screen for each word (this can be configured based on word class).
