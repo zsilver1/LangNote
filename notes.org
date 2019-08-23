@@ -1,0 +1,23 @@
+* Features and Words
+- A language description is based on its *features* and *words*
+- Features include any grammatical or phonological feature of
+  a language.
+- Words include any morphemes that are not dependent on other words.
+- Both features and words should be /easily/ linked to in any text input space.
+* Word Classes and Info
+- Fully customizable word classes
+- Inflectional tables with customizable auto-generation
+- Associate inflections with features
+- Link words to other words via etymology
+- Tag words by topic
+- Words will be linked to all glosses and translations that they are contained in.
+* Glossing
+- Enter text, morpheme gloss, english gloss, POS gloss, and free translation
+- Will automatically attempt to search for and link words and features
+* Searching
+- Quick search by word or English definition, filters as you type
+- Advanced search to search for words filtered by word class
+- Search features as well
+* Links
+- Links to features or words will be hoverable to show short definition
+- Clicking on links will open word/feature screen
