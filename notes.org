@@ -1,9 +1,12 @@
-* Features and Words
+* Features, Words, and Glosses
 - A language description is based on its *features* and *words*
 - Features include any grammatical or phonological feature of
   a language.
 - Words include any morphemes that are not dependent on other words.
 - Both features and words should be /easily/ linked to in any text input space.
+- Glosses are annotated examples of text.
+- Glosses are edited in a separate screen, but can be added to a word, a feature
+  description, in the "texts" section.
 * Word Classes and Info
 - Fully customizable word classes
 - Word can have "alternate forms" that are used for searching. Defined by regex?
@@ -33,6 +36,9 @@
 * Links
 - Links to features or words will be hoverable to show short definition
 - Clicking on links will open word/feature screen
+
+- While editing text, links 
+
 * Inflections
 - Inflections map X number of features to a specific set of regular expression replacements
   e.g. future positive -> rule 1: replace x$ with sa
@@ -42,3 +48,16 @@
   viewed in the inflection screen for each word (this can be configured based on word class).
 * Tech Stack
 - Electron + semantic ui + mongodb + typescript
+
+
+* Screens
+- Intro screen
+- Language info screen (with tabs for each POS)
+- Word screen
+- Feature screen (with outline for nested feature descriptions)
+- Edit Gloss screen
+- Texts screen (with outline for nested texts/pages)
+* Database Schemas
+** Word
+** Feature
+** Gloss
