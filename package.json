@@ -19,8 +19,13 @@
   },
   "homepage": "https://github.com/zsilver1/LangNote#readme",
   "devDependencies": {
+    "@types/jquery": "^3.3.31",
     "electron": "^6.0.4",
     "tslint": "^5.19.0",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "fomantic-ui": "^2.7.7",
+    "jquery": "^3.4.1"
   }
 }

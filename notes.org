@@ -6,15 +6,26 @@
 - Both features and words should be /easily/ linked to in any text input space.
 * Word Classes and Info
 - Fully customizable word classes
+- Word can have "alternate forms" that are used for searching. Defined by regex?
 - Inflectional tables with customizable auto-generation
 - Associate inflections with features
-- Link words to other words via etymology
+- Link words to other words via "linked words"
 - Tag words by topic
 - Words will be linked to all glosses and translations that they are contained in.
 * Glossing
-- Enter text, morpheme gloss, english gloss, POS gloss, and free translation
+- Glossing is separate screen that can be accessed from "Texts", "Features", or "Phrases"
+  on a word page.
+- Enter text, morpheme gloss, english gloss, and free translation
 - Will automatically attempt to search for and link words and features
 - Glosses can be created in word examples or in dedicated glosses page
+** Steps:
+1. Enter local lang and free translation.
+2. Click button to "Interlinearize".
+3. Will attempt to find words (with inflections) in dictionary, if so,
+   will automatically add the morpheme gloss and english gloss to those
+   words.
+4. If not found, underline in red. Clicking on this word will prompt the user
+   to optionally split the words into morphemes, 
 * Searching
 - Quick search by word or English definition, filters as you type
 - Advanced search to search for words filtered by word class
