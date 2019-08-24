@@ -2,10 +2,11 @@
   "name": "langnote",
   "version": "0.1.0",
   "description": "App for documenting languages",
-  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && electron ./dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/zsilver1/LangNote#readme",
   "devDependencies": {
     "electron": "^6.0.4",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3"
   }
 }
