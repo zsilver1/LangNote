@@ -14,6 +14,7 @@
 * Glossing
 - Enter text, morpheme gloss, english gloss, POS gloss, and free translation
 - Will automatically attempt to search for and link words and features
+- Glosses can be created in word examples or in dedicated glosses page
 * Searching
 - Quick search by word or English definition, filters as you type
 - Advanced search to search for words filtered by word class
@@ -28,3 +29,5 @@
 - These generated inflections can be freely overridden in word screen
 - Optionally, inflections can appear directly on the word screen, or they can be
   viewed in the inflection screen for each word (this can be configured based on word class).
+* Tech Stack
+- Electron + semantic ui + mongodb + typescript
