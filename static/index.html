@@ -5,24 +5,53 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <link rel="stylesheet" href="../semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <style>
+        #testbutton {
+            border: none;
+            padding: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
-    <button class="ui primary button">Primary</button>
-    <button class="ui secondary button">Secondary</button>
-    <button class="ui positive button">Positive</button>
-    <button class="ui negative button">Negative</button>
-    <h1>Hello World!</h1>
-    We are using Node.js
-    <script>document.write(process.versions.node)</script>,
-    Chromium
-    <script>document.write(process.versions.chrome)</script>,
-    and Electron
-    <script>document.write(process.versions.electron)</script>
+    <div id="hello"><textarea></textarea></div>
+    <button class="ui primary button" onclick="save()">Save</button>
+
+    <div class="ui segment">
+        This <button id="testbutton" class="ui compact small tertiary button">test</button> is
+        <span class="ui red text">red</span>
+        inline text and this is <span class="ui blue text">blue</span>
+        inline text and this is <span class="ui purple text">purple</span> inline text
+        asdlfa sdlfkaj sdlfkj aslkdfj alksdjf lkasj dflajs dlfkjas dflkja sdlfkj aslkdfjasdf
+        alsdkfj alsdkfj alskdjf laskdjf
+        asldkfj alsdkfj alsdkjf alksdj flkasjd f
+    </div>
+    <div class="ui inverted segment">
+        This is <span class="ui inverted red text">red</span> inline text and this is <span
+            class="ui inverted blue text">blue</span> inline text and this is <span
+            class="ui inverted purple text">purple</span> inline text
+    </div>
 </body>
 
 <script>
-    require('../src/renderer.ts')
+    class mySimpleMDE extends SimpleMDE {
+        constructor() {
+            super();
+        }
+        markdown(value) {
+            value = value.replace(/{(\S*)}/g,
+                '<button id="testbutton" class="ui compact small tertiary button">$1</button>');
+            return super.markdown(value);
+        }
+    }
+    var simplemde = new mySimpleMDE();
+    function save() {
+        let div = window.document.getElementById("hello");
+        console.log(simplemde.markdown(simplemde.value()));
+    }
+    require('../dist/renderer.js')
 </script>
 
 </html>
