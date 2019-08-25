@@ -1,120 +1,119 @@
-//POS
 {
-    "name": "verb",
-    "properties": {
-        "class": {
-            "options": [
-                "a, b, c,"
-            ],
-            "inflect": true,
-            "feature": "hash"
-        },
-        "transitivity": {
-            "options": [
-                "transitive",
-                "intransitive"
-            ],
-            "inflect": true,
-            "checkbox": true,
-            "feature": "hash"
-        }
-    },
-    "inflections_to_display": [
-        [
-            "a",
-            "transitive"
-        ],
-        [
-            "b",
-            "intransitive"
-        ]
-    ],
-    "inflections": {
-        "transitive": {
-            "b": [
-                [
-                    "regex1",
-                    "regex2"
-                ],
-                [
-                    "regex3",
-                    "regex4"
-                ]
-            ]
-        }
-    }
-}
-//WORD
-{
-    "_id": "hash",
-    "word": "word",
-    "POS": {
+    {
+        "name": "verb",
         "properties": {
-            "class": "a",
-            "transitivity": "intransitive"
+            "class": {
+                "options": [
+                    "a, b, c,"
+                ],
+                "inflect": true,
+                "feature": "hash"
+            },
+            "transitivity": {
+                "options": [
+                    "transitive",
+                    "intransitive"
+                ],
+                "inflect": true,
+                "checkbox": true,
+                "feature": "hash"
+            }
+        },
+        "inflections_to_display": [
+            [
+                "a",
+                "transitive"
+            ],
+            [
+                "b",
+                "intransitive"
+            ]
+        ],
+        "inflections": {
+            "transitive": {
+                "b": [
+                    [
+                        "regex1",
+                        "regex2"
+                    ],
+                    [
+                        "regex3",
+                        "regex4"
+                    ]
+                ]
+            }
         }
     },
-    "inflections": {
-        "intransitive": {
-            "a": "asdf",
-            "b": "fdsa"
-        }
+    {
+        "_id": "hash",
+        "word": "word",
+        "POS": {
+            "properties": {
+                "class": "a",
+                "transitivity": "intransitive"
+            }
+        },
+        "inflections": {
+            "intransitive": {
+                "a": "asdf",
+                "b": "fdsa"
+            }
+        },
+        "keywords": [
+            "def1",
+            "def2",
+            "def3"
+        ],
+        "phrases": [
+            "glosshash1",
+            "glosshash2"
+        ],
+        "definition": "this is a long string",
+        "usages": [
+            "glosshash3",
+            "hash4",
+            "hash5"
+        ],
+        "attachments": {}
     },
-    "glosses": [
-        "def1",
-        "def2",
-        "def3"
-    ],
-    "phrases": [
-        "glosshash1",
-        "glosshash2"
-    ],
-    "usages": [
-        "glosshash3",
-        "hash4",
-        "hash5"
-    ],
-    "attachments": {}
-}
-// FEATURE
-{
-    "_id": "hash",
-    "name": "Transitivity",
-    "related_tooltips": [
-        {
-            "abbrev": "TRANS",
-            "description": "short description for tooltip",
-        }
-    ]
+    {
+        "_id": "hash",
+        "name": "Transitivity",
+        "related_tooltips": [
+            {
+                "abbrev": "TRANS",
+                "description": "short description for tooltip",
+            }
+        ]
     "mkdown_content": "long string of stuff",
-    "children": []
-}
-//Interlinear
-{
-    "input_text": "",
-    "free_translate": "",
-    "morpheme_gloss": [
-        {
-            "morpheme": "asdf",
-            "is_word": true,
-            "id": "word hash"
-        },
-        {
-            "morpheme": "el",
-            "is_word": false,
-            "id": "feature hash"
-        }
-    ]
+        "children": []
+    },
+    {
+        "input_text": "",
+        "free_translate": "",
+        "morpheme_gloss": [
+            {
+                "morpheme": "asdf",
+                "is_word": true,
+                "id": "word hash"
+            },
+            {
+                "morpheme": "el",
+                "is_word": false,
+                "id": "feature hash"
+            }
+        ]
     "english_gloss": [
-        {
-            "morpheme": "dog",
-            "is_word": true,
-        },
-        {
-            // no morpheme = use feature desc
-            "morpheme": "",
-            "is_word": false,
-            "id": "feature hash"
-        }
-    ]
+            {
+                "morpheme": "dog",
+                "is_word": true,
+            },
+            {
+                // no morpheme = use feature desc
+                "morpheme": "",
+                "is_word": false,
+                "id": "feature hash"
+            }
+        ]
+    }
 }
