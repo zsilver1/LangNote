@@ -2,21 +2,29 @@
   <el-menu>
     <el-submenu index="1">
       <template slot="title">
-        <span>Word Classes</span>
+        <h1>Word Classes</h1>
       </template>
-      <el-menu-item-group v-for="i in pos" :title="i" :key="i.id">
-      </el-menu-item-group>
+        <el-menu-item v-for="(pos, i) in partOfSpeech" :key="i">
+          <h3>{{pos}}</h3>
+        </el-menu-item>
     </el-submenu>
   </el-menu>
 </template>
 
+<style scoped>
+h1 {
+  color: #409EFF;
+}
+</style>
+
 <script lang="ts">
-import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import Vue from "vue";
+import { Component } from "vue-property-decorator";
+
 
 @Component
 export default class Navbar extends Vue {
-  get pos() {
+  get partOfSpeech() {
     return this.$store.state.pos;
   }
 }
