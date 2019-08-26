@@ -1,21 +1,28 @@
 <template>
   <div id="app">
-    
+    <el-aside>
+      <Navbar></Navbar>
+    </el-aside>
+    <el-main>
+      <p>THIS IS A TEST</p>
+    </el-main>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+<script>
+import Navbar from "./components/Navbar.vue";
 
-@Component({
-  components: {},
-})
-export default class App extends Vue {}
+export default {
+  name: "app",
+  components: {
+    Navbar
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

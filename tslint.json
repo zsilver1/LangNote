@@ -4,10 +4,6 @@
     "tslint:recommended"
   ],
   "linterOptions": {
-    "include": [
-      "src/**/*.ts",
-      "src/**/*.vue"
-    ],
     "exclude": [
       "node_modules/**"
     ]
