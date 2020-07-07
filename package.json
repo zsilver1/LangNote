@@ -24,7 +24,7 @@
     "@types/pouchdb-find": "^6.3.4",
     "@types/simplemde": "^1.11.7",
     "@types/uuid": "^3.4.5",
-    "electron": "^6.0.4",
+    "electron": "^7.2.4",
     "tslint": "^5.19.0",
     "typescript": "^3.5.3"
   },
